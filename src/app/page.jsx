@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import { Bars3Icon } from "@heroicons/react/solid";
 import Link from "next/link";
 
 export default function Home() {
