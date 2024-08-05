@@ -10,7 +10,7 @@ export default function Home() {
   };
   return (
     <div>
-      <h2 className="text-3xl">Welcome to ollert</h2>
+      <h2 className="text-3xl">Welcome to taskager</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam fugit
         optio enim aliquid illo accusamus! Obcaecati assumenda architecto in
