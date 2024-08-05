@@ -51,61 +51,59 @@ export default function Navigation() {
             )}
           </li>
         </ul>
-        {isMenuVisible && (
-          <ul
-            id="mobileMenu"
-            className={`flex flex-col transition duration-300 ${
-              isMenuVisible ? "h-dvh" : "h-0 scale-x-0"
-            }`}
-          >
-            <li className="h-16 content-center border-b-2 border-gray-500">
-              <div className="flex flex-row justify-between">
-                <div>Features</div>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </div>
+        <ul
+          id="mobileMenu"
+          className={`flex flex-col ${
+            isMenuVisible ? "transition duration-200 h-dvh" : "h-0 scale-y-0"
+          }`}
+        >
+          <li className="h-16 content-center border-b-2 border-gray-500">
+            <div className="flex flex-row justify-between">
+              <div>Features</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
               </div>
-            </li>
-            <li className="h-16 content-center border-b-2 border-gray-500">
-              <div className="flex flex-row justify-between">
-                <div>Solutions</div>
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    class="size-5"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                      clip-rule="evenodd"
-                    />
-                  </svg>
-                </div>
+            </div>
+          </li>
+          <li className="h-16 content-center border-b-2 border-gray-500">
+            <div className="flex flex-row justify-between">
+              <div>Solutions</div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
               </div>
-            </li>
-            <button className="mt-5 rounded-none border-2 border-indigo-700 bg-indigo-500 p-5 text-xl text-white transition delay-150 duration-300 ease-in-out hover:border-indigo-500 hover:bg-indigo-600">
-              <Link href="/signIn" onClick={closeMobileMenu}>
-                Sign in
-              </Link>
-            </button>
-            <button className="mt-2 rounded-none border-2 border-indigo-500 p-5 text-xl">
-              Log in
-            </button>
-          </ul>
-        )}
+            </div>
+          </li>
+          <button className="mt-5 rounded-none border-2 border-indigo-700 bg-indigo-500 p-5 text-xl text-white transition delay-150 duration-300 ease-in-out hover:border-indigo-500 hover:bg-indigo-600">
+            <Link href="/signIn" onClick={closeMobileMenu}>
+              Sign in
+            </Link>
+          </button>
+          <button className="mt-2 rounded-none border-2 border-indigo-500 p-5 text-xl">
+            Log in
+          </button>
+        </ul>
       </nav>
     </div>
   );
