@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function SignIn() {
   return (
-    <div className="flex flex-col justify-center items-center max-w-full">
+    <div className="flex max-w-full flex-col items-center justify-center">
       <div className="flex flex-row">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -22,25 +22,25 @@ export default function SignIn() {
         </svg>
         <h2 className="text-3xl">Ollert</h2>
       </div>
-      <div className="mt-3 w-full  flex flex-col items-center">
-        <p className="font-bold text-lg">Sign up to continue</p>
+      <div className="mt-3 flex  w-full flex-col items-center">
+        <p className="text-lg font-bold">Sign up to continue</p>
         <form action={""}>
           <input
             type="email"
             placeholder="Enter your email"
-            className="border mt-3 border-gray-300 text-gray-900 text-md rounded-none focus:ring-blue-500 focus:border-blue-500 block w-full p-4"
+            className="mt-3 block w-full rounded-none border border-gray-300 p-4 text-base text-gray-900 focus:border-blue-500 focus:ring-blue-500"
           />
-          <p className="text-sm mt-2 text-gray-500">
+          <p className="mt-2 text-sm text-gray-500">
             By signing up, I accept the Terms of Service and acknowledge the
             Privacy Policy.
           </p>
 
-          <button className="w-full rounded-none bg-indigo-500 text-white p-5 border-2 border-indigo-700 mt-5 text-xl transition ease-in-out delay-150 hover:bg-indigo-600 hover:border-indigo-500 duration-300">
+          <button className="mt-5 w-full rounded-none border-2 border-indigo-700 bg-indigo-500 p-5 text-xl text-white transition delay-150 duration-300 ease-in-out hover:border-indigo-500 hover:bg-indigo-600">
             <Link href="/signIn">Sign up</Link>
           </button>
         </form>
 
-        <p className="text-sm mt-2 text-gray-500">
+        <p className="mt-2 text-sm text-gray-500">
           Already have an account?
           <Link href="/logIn" className="text-indigo-500">
             {" "}

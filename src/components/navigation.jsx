@@ -15,7 +15,7 @@ export default function Navigation() {
   return (
     <div>
       <nav>
-        <ul className="flex flex-row justify-between items-center h-16 border-b-2 border-gray-500">
+        <ul className="flex h-16 flex-row items-center justify-between border-b-2 border-gray-500">
           <li className="text-2xl">
             <Link href="/" onClick={closeMobileMenu}>
               ollert
@@ -54,8 +54,8 @@ export default function Navigation() {
         {isMenuVisible && (
           <ul
             id="mobileMenu"
-            className={`flex flex-col duration-300 transition ${
-              isMenuVisible ? "h-[100dvh]" : "scale-x-0 h-0"
+            className={`flex flex-col transition duration-300 ${
+              isMenuVisible ? "h-dvh" : "h-0 scale-x-0"
             }`}
           >
             <li className="h-16 content-center border-b-2 border-gray-500">
@@ -96,12 +96,12 @@ export default function Navigation() {
                 </div>
               </div>
             </li>
-            <button className="rounded-none bg-indigo-500 text-white p-5 border-2 border-indigo-700 mt-5 text-xl transition ease-in-out delay-150 hover:bg-indigo-600 hover:border-indigo-500 duration-300">
+            <button className="mt-5 rounded-none border-2 border-indigo-700 bg-indigo-500 p-5 text-xl text-white transition delay-150 duration-300 ease-in-out hover:border-indigo-500 hover:bg-indigo-600">
               <Link href="/signIn" onClick={closeMobileMenu}>
                 Sign in
               </Link>
             </button>
-            <button className="rounded-none border-2 border-indigo-500 text-xl p-5 mt-2">
+            <button className="mt-2 rounded-none border-2 border-indigo-500 p-5 text-xl">
               Log in
             </button>
           </ul>
